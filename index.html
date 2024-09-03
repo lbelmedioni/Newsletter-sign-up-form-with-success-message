@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+<div class="container" id="cnt1">
+    <img class="box-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+  <div class="box">
+    <h1>Stay updated!</h1>
+    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    <div class="icon-list">
+      <ul>
+        <li><img src="./assets/images/icon-list.svg" alt=""><p>Product discovery and building what matters</p></li>
+        <li><img src="./assets/images/icon-list.svg" alt=""><p>Measuring to ensure updates are a success</p></li>
+        <li><img src="./assets/images/icon-list.svg" alt=""><p>And much more!</p></li>
+      </ul>
+     </div>
+      <div class="inp">
+      <form action="/submit" method="POST">
+        <label for="inpt"><p>Email address</p></label>
+        <p><span id="erreur-email"></span></p>
+        <input id = "inpt" type="email" placeholder="email@company.com">
+      </div>
+      <button id="btn-sub"><p>Subscribe to monthly newsletter</p></button>
+  </div>
+</div>
+<div class="cntr2" id="cnt2">
+  <img src="./assets/images/icon-list.svg" alt="">
+  <h1> Thanks for subscribing!</h1>
+  <p> A confirmation email has been sent to <span id="spn">ash@loremcompany.com</span> 
+    .Please open it and click the button inside to confirm your subscription.</p>
+  <button id="btn-dis"><p>Dismiss message</p></button>
+</div>
+  
+<script src="./app.js"></script>
+</body>
+</html>
